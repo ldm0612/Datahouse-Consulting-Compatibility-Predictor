@@ -124,9 +124,9 @@ for applicant in applicants:
   # If the applicant have perfect scores in both fields, then their final score will be 0.8+0.2=1.
   final_score= round(np.mean(v_scores)+np.mean(g_scores), 1)
   scoredApplicants.append({"name" : applicant["name"], "score": final_score})
-
+  output_dict={"scoredApplicants": scoredApplicants}
 
 ### 5. Output a JSON file
-json_outcome=json.dumps(scoredApplicants)
+json_outcome=json.dumps(output_dict)
 with open(scoredApplicants.json, 'w') as json_file:
     json_file.write(json_outcome)
