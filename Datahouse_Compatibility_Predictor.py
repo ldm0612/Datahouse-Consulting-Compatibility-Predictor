@@ -1,9 +1,12 @@
 import numpy as np
 import json
 
+input_file = #path of the input file#
+output_file = #path of the desire output file#
+
 ### 1.Read in sample input file.
 
-with open(input_file.json, 'r') as json_file:
+with open(input_file, 'r') as json_file:
     data = json.load(json_file)
 
 team_members = data['team']
@@ -128,5 +131,5 @@ for applicant in applicants:
 
 ### 5. Output a JSON file
 json_outcome=json.dumps(output_dict)
-with open(scoredApplicants.json, 'w') as json_file:
+with open(output_file, 'w') as json_file:
     json_file.write(json_outcome)
