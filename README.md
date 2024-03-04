@@ -1,5 +1,5 @@
 # Datahouse-Consulting-Compatibility-Predictor
-This is a predictor that predict compatibility between applicants and existing team members.
+This is a predictor that predict compatibility between applicants and existing team members. The user should provide the path for the input file and the desired name and path of the output file, and the output compatibility score will be stored in the desired output path.
 
 ## Input
 The predictor takes a json file as input. The json file should store a dictionary object that include keys "team" and "applicants".
